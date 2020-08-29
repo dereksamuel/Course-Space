@@ -1,0 +1,89 @@
+.NavBar {
+  position: fixed;
+  background-color: #1a1a2e;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.list-buttons {
+  padding: 5px;
+  font-style: italic;
+  color: white;
+  list-style: none;
+  display: flex;
+}
+
+.list-cog {
+  padding: 5px;
+  font-style: italic;
+  color: white;
+  list-style: none;
+  display: flex;
+}
+
+.list-cog li a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-buttons li {
+  margin: 5px;
+}
+
+.list-buttons li:hover {
+  cursor: pointer;
+}
+
+.list-buttons li a {
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar img {
+  width: 200px;
+}
+
+.royal-btn {
+  margin: auto 5px;
+}
+
+.royal-btn button {
+  display: none;
+  border-radius: 50%;
+  border: none;
+  background-color: #0f3460;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+}
+
+.royal-btn button:hover {
+  cursor: pointer;
+}
+
+.royal-btn button:active {
+  transform: scale(.8);
+  background-color: white;
+  color: #0f3460;
+}
+
+@media screen and (max-width:480px) {
+  .NavBar img {
+    width: 100%;
+  }
+  .royal-btn button {
+    display: initial;
+  }
+  .list-buttons {
+    background-color: #0f3460;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}

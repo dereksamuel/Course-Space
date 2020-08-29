@@ -1,0 +1,82 @@
+.Work {
+  position: relative;
+  width: 100%;
+}
+
+.Work h1 {
+  width: 100vw;
+  text-align: center;
+}
+
+.works {
+  width: 100%;
+  height: calc(100vh - 221px);
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.display-element {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-label {
+  position: relative;
+}
+
+.form-add {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.form-add buttom {
+  margin-left: 15px;
+}
+
+.form-add input {
+  width: 50%;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.label {
+  width: 40vw;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #518156;
+  border-left: 20px double white;
+  color: white;
+  font-weight: bold;
+  margin: 15px;
+  border-radius: 0px 52px 54px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.label p {
+  margin: 25px;
+}
+
+.label:nth-of-type(even) {
+  background-color: #368700;
+  border-radius: 52px 0px 0px 54px;
+  border-left: none;
+  border-right: 20px double white;
+}
+
+@media screen and (max-width: 540px) {
+  .label {
+    width: 100%;
+  }
+}

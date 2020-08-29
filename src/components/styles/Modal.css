@@ -1,0 +1,138 @@
+.Modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000ed;
+  z-index: 6;
+  transition: 1s;
+}
+
+.btn:active {
+  transform: none;
+}
+
+.movementContainerModal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+  transition: 1s
+}
+
+.Modal-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+  overflow: auto;
+  background: #ffffff;
+  font-size: 1rem;
+  color: #767676;
+  transition: 1s;
+}
+
+.space {
+  height: 15px;
+}
+
+.Modal-container input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #353535;
+}
+
+.Modal-container textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.Modal-container ul li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.Modal-container .radio {
+  width: 10px;
+  margin: 10px;
+}
+
+.Modal-container ul {
+  padding: 0;
+}
+
+.other-options {
+  padding: 5px;
+}
+
+#Cancel {
+  margin: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#Cancel:hover {
+  cursor: pointer;
+}
+
+.visible {
+  animation: tictoc 1s forwards;
+  transition: 1s;
+}
+
+.isntvisible {
+  transition: 1s;
+  display: none;
+}
+
+.form {
+  height: 100%;
+}
+
+@keyframes tictoc {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 200%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .movementContainerModal {
+    top: 0;
+  }
+  .Modal-container {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .movementContainerModal {
+    top: 0;
+  }
+  .Modal-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+  }
+}

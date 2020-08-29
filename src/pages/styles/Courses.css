@@ -1,0 +1,12 @@
+.courses {
+  width: 100%;
+}
+
+.courses-title {
+  grid-area: title;
+}
+
+.cards {
+  grid-area: content;
+  overflow: auto;
+}

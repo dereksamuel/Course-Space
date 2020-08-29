@@ -1,0 +1,110 @@
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../images/milky-way-923738.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.firebaseui-idp-button {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 1rem;
+  font-style: italic;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: #da3752;
+  transition: .05s;
+}
+
+.firebaseui-idp-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 0px #dd2133;
+}
+
+.firebaseui-idp-button:active {
+  transform: scale(.9);
+}
+
+.firebaseui-idp-facebook {
+  color: white;
+}
+
+.firebaseui-idp-facebook:hover {
+  box-shadow: 0px 0px 15px 0px #186bcf;
+}
+
+.firebaseui-idp-text-short {
+  display: none;
+}
+
+.firebaseui-idp-list {
+  padding: 0;
+  justify-content: space-around;
+  display: flex;
+}
+
+.firebaseui-list-item {
+  list-style: none;
+}
+
+.firebaseui-idp-button img {
+  width: 30px;
+  margin: 5px;
+}
+
+.container {
+  width: 450px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 1px 1px 80px 2px #1a1a2e;
+  background-color: #1a1a2e;
+  color: #ea4762;
+  font-weight: bold;
+}
+
+.input-topic {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.OP {
+  display: block;
+  margin: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+.input-topic input {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  padding: 5px;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(207, 207, 207);
+}
+
+hr {
+  color: #e84560;
+}
+
+@media screen and (max-width: 468px) {
+  .firebaseui-idp-list {
+    display: initial;
+  }
+  .firebaseui-idp-button {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
