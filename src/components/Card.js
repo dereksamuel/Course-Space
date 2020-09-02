@@ -14,7 +14,7 @@ function Card(props) {
         <img src={wave3} alt="wave c" className="wave c" />
       </figure>
       <section className="fullName">
-        <img src="https://www.gravatar.com/avatar?d=identicon" alt="Avatar" />
+        <img src={props.img ? `${props.img}` : 'https://www.gravatar.com/avatar?d=identicon'} alt={props.firstName} />
         <div className="fullName-text">
           <h1>
             {props.firstName}
@@ -30,16 +30,17 @@ function Card(props) {
           <p>{props.description}</p>
         </div>
         <ul className="studies">
-          {props.studies ? props.studies.map((studie) => {
+          {props.pub ? props.pub.map((studie) => {
             return (
               <li key={studie.id}>
-                {studie > 1 ? <p>{studie.name} </p> : <p>{studie.name}, </p>}
+                {studie <= 1 ? <p>{studie} </p> : <p>{studie}, </p>}
               </li>
             );
           }) : null}
         </ul>
       </section>
-      <p className="course">ESTUDIO 1</p>
+      <p className="course">{props.datePub}</p>
+      {props.children}
     </div>
   );
 }

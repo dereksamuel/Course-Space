@@ -10,3 +10,9 @@
   grid-area: content;
   overflow: auto;
 }
+
+.action {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}

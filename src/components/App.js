@@ -5,6 +5,8 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import NotFound from '../pages/NotFound';
 
+import Course from '../pages/Course';
+
 import Layout from '../components/Layout';
 
 class App extends React.Component {
@@ -18,6 +20,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={() => <Home db={this.props.db} service={this.props.service} login={this.props.login}></Home>} />
             <Route exact path="/login" component={() => <Login login={this.props.login} firebase={this.props.service} />} />
+            <Route exact path="/:courseId/works" component={(props) => <Course { ...props }></Course>} />
             <Route component={NotFound}></Route>
           </Switch>
         </Layout>

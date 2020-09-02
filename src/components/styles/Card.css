@@ -9,11 +9,11 @@
 
 .card {
   margin: 20px;
-  box-shadow: 1px 5px 20px 10px gray;
+  box-shadow: 1px 5px 20px 10px grey;
   border-radius: 25px;
   position: relative;
   width: 400px;
-  height: 440px;
+  height: 520px;
 }
 
 .studies {
@@ -76,10 +76,11 @@
 }
 
 .fullName img {
-  width: 100px;
+  width: 110px;
   border-radius: 50%;
-  height: 100px;
+  height: 110px;
   margin: auto 5px;
+  object-fit: cover;
 }
 
 .fullName-text {
@@ -116,7 +117,6 @@
   font-weight: bold;
   color: #c1525a;
   margin: 0;
-  padding: 9px;
   font-style: italic;
 }
 
